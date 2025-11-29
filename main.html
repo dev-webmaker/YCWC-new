@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How AI Give Benefits to Human Life</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="script" href="main.js">
+</head>
+
+<body>
+
+  <nav id="sidebar">
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <div class="sidebar" id="sidebar-content">
+      <button class="closebtn" onclick="closeNav()">×</button>
+      <a href="main.html">Home</a>
+      <a href="ben.html">Benefits of AI</a>
+      <a href="#footer">Contact</a>
+      <div class="language-menu">
+        <button class="lang-btn">🌐 Language ▾</button>
+        <ul class="lang-dropdown">
+          <li onclick="setLanguage('id')">🇮🇩 Indonesia</li>
+          <li onclick="setLanguage('en')">🇬🇧 English</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="jumbotron">
+    <h1 data-text="title">How AI Give Benefit to Human Life</h1>
+  </header>
+  <h2 data-text="what_is_ai">What is AI?</h2>
+  <p data-text="ai_description"><B>AI, or artificial intelligence, is a field of computer science that creates systems capable of performing tasks
+      that <br> require human intelligence, such as learning, problem-solving, and decision-making</B></p>
+  <section id="benefits" class="cards">
+
+    <div class="card" data-type="Healthcare">
+      <h3 data-text="healthcare">Healthcare</h3>
+      <p data-text="healthcare_desc" style="text-decoration: aliceblue;">AI improves diagnosis accuracy and patient monitoring.</p>
+    </div>
+
+    <div class="card" data-type="Transportation">
+      <h3 data-text="transport">Transport</h3>
+      <p data-text="transport_desc" tyle="text-decoration: aliceblue;">AI improves traffic, safety, and efficiency.</p>
+    </div>
+
+    <div class="card" data-type="Education">
+      <h3 data-text="education">Education</h3>
+      <p data-text="education_desc" tyle="text-decoration: aliceblue;">AI enhances learning personalization.</p>
+    </div>
+    <div id="info-popup" class="info-popup">
+      <button class="close-popup">&times;</button>
+      <h2 id="popup-title" data-text="popuph2-info"></h2>
+      <p id="popup-desc"data-text="popup-p-info"></p>
+
+      <div class="popup-stats">
+        <div class="stat-box">
+          <h3 id="stat1-num"data-text="popuph2-healthcare"></h3>
+          <p id="stat1-text"data-text="popup-p-healthcare"></p>
+        </div>
+        <div class="stat-box">
+          <h3 id="stat2-num" data-text="popuph2-transport"></h3>
+          <p id="stat2-text"data-text="popup-p-transport"></p>
+        </div>
+        <div class="stat-box">
+          <h3 id="stat3-num"data-text="popuph2-edu"></h3>
+          <p id="stat3-text"data-text="popup-p-edu"></p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <div id="popup-container" class="popup hidden">
+    <div class="popup-content">
+      <span id="popup-close">×</span>
+      <h2 id="popup-title"></h2>
+
+      <div id="popup-data" class="popup-data-grid"></div>
+
+      <p id="popup-desc" class="popup-description"></p>
+    </div>
+  </div>
+  <canvas id="chartInvestAI"></canvas>
+
+
+<footer class="footer-9">
+  <ul class="footer-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</li>
+  <div class="footer-social mb-2">
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+  </div>
+  <p>&copy; <span id="year9"></span> <span data-text="footer">Dev. All Rights Reserved</span></p>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
